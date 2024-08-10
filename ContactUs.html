@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Biosheng website</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
+
 <body>
-$END$
+
+<div id="header"></div>
+
+<script>fetch('main.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('header').innerHTML = data);</script>
+
+<header><h1>Contact Us<br>联系我们</h1></header>
+
+<main>
+    <h1>邮箱地址: 1234567@qq.com</h1>
+    <h1>Email Address: 1234567@qq.com</h1>
+</main>
+
 </body>
 </html>

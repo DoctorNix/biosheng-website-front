@@ -6,78 +6,39 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
-<style>
-    body {
-        font-family: "Lato", sans-serif;
-        margin: 0;
-        background-color: #FFF3E0;
-        color: #5D4037;
-    }
-
-    header {
-        text-align: center;
-        background-color: #D7CCC8;
-        color: #5D4037;
-        padding: 10px 0;
-        margin-top: 0;
-    }
-
-    main {
-        text-align: center;
-        padding: 20px;
-    }
-
-    img {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px;
-    }
-
-    p {
-        font-size: 18px;
-        line-height: 1.6;
-        text-align: center;
-        max-width: 900px;
-        margin: 0 auto 20px;
-        padding: 0 20px;
-    }
-
-    .bar {
-        display: flex;
-        justify-content: center; /* Aligns items to the center */
-        flex-wrap: wrap; /* Allows items to wrap to the next line */
-        gap: 10px; /* Adds space between the items */
-        padding: 10px; /* Adds padding to the bar */
-    }
-
-    .bar-item {
-        text-decoration: none; /* Removes underline from links */
-        padding: 10px 20px; /* Adds padding to the buttons */
-        background-color: #948882; /* Button background color */
-        color: #fff; /* Button text color */
-        border-radius: 5px; /* Adds rounded corners */
-        margin: 5px; /* Adds margin to each button */
-        text-align: center;
-    }
-
-    .bar-item:hover {
-        background-color: #726c68; /* Button hover color */
-    }
-
-</style>
 
 <body>
 
-<div class="filler-bar">
-    <div class="bar">
-        <a class="bar-item" href="Home.html">Home<br>主页</a>
-        <a class="bar-item" href="AboutUs.html">ABOUT US<br>关于我们</a>
-        <a class="bar-item" href="Products.html">The Products<br>主营业务/产品</a>
-        <a class="bar-item" href="Crew.html">Our Crew<br>我们的团队</a>
-        <a class="bar-item" href="Crew.html">Contact Us<br>联系我们</a>
+<div id="header"></div>
+<script>
+    fetch('main.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('header').innerHTML = data);
+</script>
+<header><h1>主营业务/产品</h1></header>
+
+<main>
+    <div class="section">
+        <div class="section-text">
+            <h1>AI医疗器械-内镜精灵ENDOANGEL®-经销商</h1>
+            <a href="https://www.endoangel.cn/" target="_blank">内镜精灵-ENDOANGEL®</a>
+            <h3>基于深度学习技术的人工智能消化内镜下辅助诊疗系统，</h3>
+            <h3>可对消化内镜下视频图像进行实时监测，规范医师的内镜操作，</h3>
+            <h3>并实时辅助医师提示可疑病灶，减少漏诊、误诊，</h3>
+            <h3>提高早期癌症检出率，助力消化道系统肿瘤的早发现、早诊断、早治疗。</h3>
+        </div>
+        <img alt="EndoAngel logo" src="/images/ENDOANGEL.png">
     </div>
-</div>
+
+    <p>
+    <h1>专注AI医疗器械</h1>
+    <h2>描述部分</h2></p>
+    <img>放图</img>
+
+    <p>
+    <h1>医疗新产品孵化投资顾问</h1>
+    <h2>描述</h2></p>
+    <img>放图</img>
+</main>
 </body>
 </html>
