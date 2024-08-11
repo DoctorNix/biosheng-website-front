@@ -76,23 +76,38 @@
         .then(data => document.getElementById('header').innerHTML = data);
 </script>
 <header>
-    <h1 class="title_font">我们的团队</h1>
-    <h1 class="title_font">About Our Crew</h1>
+    <h1 class="title_font">我们的团队<br>About Our Crew</h1>
 </header>
 
 <main>
-    <p>管理团队<br>Management Team</p>
-    <div class="content for R&D">
-        <a href="#" name="管理团队合影">
-            <img alt="Image" src="images/管理团队的合影.png" style="display: flex">
-        </a>
-        <p>A</p>
+    <div class="section">
+        <div class="section-text">
+            <h1>管理团队<br>Management Team</h1>
+            <h3>描述<br>（图片里的人物占位）</h3>
+        </div>
+        <img alt="管理团队合影" src="images/管理团队的合影.png">
     </div>
-    <p>投资人<br>Sponsors</p>
-    <p>具体团队信息</p>
-    <p>顾问团队<br>Consultant Team</p>
-    <p>具体团队信息</p>
+    <hr style="border: 1px solid #5D4037; margin: 20px 0;">
+    <div class="section">
+        <div class="section-text">
+            <h1>投资人<br>Sponsor</h1>
+            <h3>描述<br>（图片里的人物占位和对应名字）</h3>
+        </div>
+        <img alt="投资人合影" src="images/投资人们的合影.png" style="display: block; margin: 0 auto;">
+    </div>
+    <hr style="border: 1px solid #5D4037; margin: 20px 0;">
+    <div class="section">
+        <div class="section-text">
+            <h1>顾问团队<br>Consultant Team</h1>
+            <h3>描述<br>（图片里的人物占位和对应名字）</h3>
+        </div>
+        <img alt="顾问团队合影" src="images/顾问团队的合影.png" style="display: block; margin: 0 auto;">
+    </div>
+    <hr style="border: 1px solid #5D4037; margin: 20px 0;">
+    <!--后面如需要不同的呈现方式请联系修改-->
 </main>
-
+<footer>
+    <p id="foot">&copy; 2024 百盛 Biosheng Medical Pte Ltd</p>
+</footer>
 </body>
 </html>

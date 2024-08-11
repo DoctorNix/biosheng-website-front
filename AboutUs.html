@@ -77,30 +77,46 @@
         .then(data => document.getElementById('header').innerHTML = data);
 </script>
 <header>
-    <h1 id="head">百盛Biosheng</h1>
+    <h1 id="head">百盛<br>Biosheng Medical Pte Ltd</h1>
 </header>
+
 <main>
-    <div align="center">
-        <img src="images/test1.png"
-             title="公司图片"
-             width="720">
-        <p>公司</p>
-    </div>
+    <!--    <div align="center">-->
+    <!--        <img src="images/test1.png"-->
+    <!--             title="公司图片"-->
+    <!--             width="720">-->
+    <!--        <p>公司</p>-->
+    <!--    </div>-->
     <section>
-        <h2>公司介绍<br>About Us</h2>
-        <p id="contents_for_company">内容待填充</p>
+        <h2>公司简史<br>Company Profile</h2>
+        <div class="section">
+            <div class="section-text">
+                <h3>描述需要</h3>
+            </div>
+        </div> <!--具体描述请按需修改，这里不做过多陈述-->
     </section>
+    <hr style="border: 1px solid #5D4037; margin: 20px 0;">
     <section>
         <h2>
-            Our Prospect<br>
-            公司前景
+            公司荣誉<br>
+            Honorary certificate
         </h2>
-        <p id="contents">前景内容</p>
+        <p id="contents">前景内容</p> <!--按需增加-->
+        <img alt="荣誉证书或其他可展示内容" src="images/certificate.png"> <!--图片需后期自行添加-->
+        <h3>或者文字描述</h3>
+        <a href="https://www.endoangel.cn/news/131.html">
+            <img alt="新闻描述" src="images/新闻描述.png">
+            新闻描述等相关<br>发布时间：
+        </a>
     </section>
-
+    <hr style="border: 1px solid #5D4037; margin: 20px 0;">
     <section>
         <h2>Our Mission<br>公司使命</h2>
-        <p id="contents_for_products">使命填充</p>
+        <div class="section">
+            <div class="section-text">
+                <h3>本公司致力于</h3>
+            </div>
+        </div> <!--具体描述请按需修改，这里不做过多陈述-->
     </section>
     <!-- Add more sections as needed -->
     <!--    <section>-->
@@ -122,7 +138,7 @@
     <!--    </section>-->
 </main>
 <footer>
-    <p id="foot">&copy; 2024 百盛</p>
+    <p id="foot">&copy; 2024 百盛 Biosheng Medical Pte Ltd</p>
 </footer>
 </body>
 </html>
